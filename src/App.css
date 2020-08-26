@@ -3,7 +3,7 @@
   --primary-color: #050404;
   --dark-color: #333333;
   --light-color: #ffffff;
-  --yellow-color: #ff8a00;
+  --yellow-color: #e47341;
   --green-color: #378f0d;
   --red-color: #c31414;
 }
@@ -12,6 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -24,8 +25,17 @@ h1, h2, .navbar, .btn {
   line-height: 1;
 }
 
+h1 {
+  color: var(--yellow-color);
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 p {
-  font-family: "Montserrat", sans-serif;
   line-height: 26px;
 }
 
@@ -250,7 +260,6 @@ ul {
 
 /* Cards */
 .card {
-  font-family: burbank;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: auto;
@@ -586,6 +595,18 @@ table th {
 }
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  padding: 10% 2.5%;
+}
+.jumbotron img {
+  width: 100%;
+  padding: 8px 36px;
+}
+.jumbotron .carousel {
+  border-bottom: 5px solid #f9f9f9;
 }
 
 /*# sourceMappingURL=App.css.map */
