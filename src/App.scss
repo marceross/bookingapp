@@ -837,3 +837,57 @@ button {
 	background-repeat: no-repeat;
 	height: 350pt;
 }
+
+/* HORARIOS */
+.fa-calendar {
+	font-size: 42px;
+	color: #38485E;
+}
+
+.horarios-lists {
+	h1 {
+    	color: #38485E!important;
+	}
+	
+	.schedule-card {
+    	padding-left: 10%;
+    	padding-right: 10%;
+	}
+
+	.col-8 {
+    	width: 66.66%;
+	}
+
+	.col-4 {
+    	width: 33.33%;
+	}
+
+	.fa-minus-circle {
+    	font-size: 26px;
+    	display: flex;
+    	align-items: flex-end;
+    	justify-content: flex-end;
+    	padding-bottom: 17px;
+	}
+}
+
+#cycling {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(./background-images/horarios/rock-cycling.png);
+	background-positon: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#running {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%,rgba(255, 255, 255, 0.8) 100%), url(./background-images/horarios/running.png);
+	background-positon: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#climbing {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(./background-images/horarios/climbing-background.png);
+	background-positon: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}	

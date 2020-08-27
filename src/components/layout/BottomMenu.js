@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 /* Import images */
 
@@ -13,10 +14,12 @@ class BottomMenu extends Component {
         			<p>Actividades</p>
         		</div>
         		<div className="col-3">
-        			<div className="center-col-12">
-        				<i className="fas fa-clock" />
-        			</div>
-        			<p>Horarios</p>
+        			<Link to="/horarios">
+        				<div className="center-col-12">
+        					<i className="fas fa-clock" />
+        				</div>
+        				<p>Horarios</p>
+        			</Link>
         		</div>
         		<div className="col-3">
         			<div className="center-col-12">

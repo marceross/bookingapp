@@ -9,6 +9,7 @@ import BottomMenu from './components/layout/BottomMenu';
 // Routing Components
 import ActivitySelection from './components/pages/ActivitySelection';
 import RockCycling from './components/pages/RockCycling';
+import Horarios from './components/pages/Horarios';
 
 class App extends Component {
   	constructor(props) {
@@ -35,6 +36,9 @@ class App extends Component {
                     </Route>        			
         			<Route path='/rock-cycling'>
                     	<RockCycling liftStateUp={this.liftStateUp} />
+                    </Route>        			
+        			<Route path='/horarios'>
+                    	<Horarios liftStateUp={this.liftStateUp} />
                     </Route>
         		</Switch>
         		<BottomMenu />
