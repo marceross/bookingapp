@@ -5,6 +5,7 @@ import './App.css';
 
 // Layout Components
 import Navbar from './components/layout/Navbar';
+import BottomMenu from './components/layout/BottomMenu';
 
 // Routing Components
 import ActivitySelection from './components/pages/ActivitySelection';
@@ -20,6 +21,7 @@ class App extends Component {
                     	<ActivitySelection />
                     </Route>
         		</Switch>
+        		<BottomMenu />
     		</Fragment>
         </Router>
   		);

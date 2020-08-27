@@ -3,7 +3,7 @@
   --primary-color: #050404;
   --dark-color: #333333;
   --light-color: #ffffff;
-  --yellow-color: #e47341;
+  --yellow-color: #E06129;
   --green-color: #378f0d;
   --red-color: #c31414;
 }
@@ -544,7 +544,7 @@ table th {
 .navbar {
   z-index: 1;
   width: 100%;
-  box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3pt 6pt #00000012;
   padding: 0;
 }
 .navbar .center-col-12, .navbar .col-12 {
@@ -565,11 +565,6 @@ table th {
 .navbar ul {
   display: flex;
 }
-.navbar form {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
 .navbar input {
   margin: 0;
   background: #e8e8e8;
@@ -580,9 +575,9 @@ table th {
   width: 100%;
 }
 .navbar .fa-search {
-  position: relative;
+  position: absolute;
   right: 30px;
-  bottom: 11px;
+  top: 24px;
 }
 .navbar a {
   color: #fff;
@@ -597,9 +592,40 @@ table th {
   margin-right: 0.6rem;
 }
 
+/* BOTTOM MENU */
+.bottom-menu {
+  background: #F8F8F8;
+  box-shadow: -5pt -3pt 13pt #00000027;
+}
+.bottom-menu p {
+  color: #E0602A;
+  font-size: 13px;
+  text-align: center;
+}
+.bottom-menu .center-col-12 {
+  padding: 0;
+}
+.bottom-menu .col-3 {
+  width: 25%;
+  padding: 2px;
+}
+.bottom-menu i {
+  font-size: 24px;
+  background: linear-gradient(270deg, #882d83, #ec7508);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* JUMBOTRON */
 .jumbotron {
-  padding: 10% 2.5%;
+  padding: 10% 1%;
+}
+.jumbotron .col-7 {
+  width: 70% !important;
+}
+.jumbotron .col-5 {
+  width: 30% !important;
+  padding: 15px 0;
 }
 .jumbotron img {
   width: 100%;
@@ -607,6 +633,24 @@ table th {
 }
 .jumbotron .carousel {
   border-bottom: 5px solid #f9f9f9;
+}
+.jumbotron button {
+  border-radius: 5pt;
+  background-image: linear-gradient(90deg, #882d83, #ec7508);
+  border: 0;
+  outline: none;
+  color: white;
+  box-shadow: 0 3pt 6pt #00000029;
+}
+
+#mas-info {
+  width: 73pt;
+  height: 25pt;
+}
+
+#reservar {
+  width: 187pt;
+  height: 42pt;
 }
 
 /*# sourceMappingURL=App.css.map */
