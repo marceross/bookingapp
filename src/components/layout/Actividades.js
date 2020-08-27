@@ -1,15 +1,27 @@
 import React from 'react';
 
 /* Import logo image */
-import RockClimbing from './images/rock-climbing.png';
+import RockCycling from './images/rock-cycling.png';
+import Climbing from './images/climbing.png';
+import Yoga from './images/yoga.png';
 
 const Actividades = () => {
     return (
 	<div className="jumbotron col-12 row">
     	<div className="carousel col-12">
     		<h1 className="text-center">Actividades</h1>
-    		<img src={RockClimbing} />
-			<h2 className="text-center">Rock Cycling</h2>
+    		<div className="center-col-12 row sliding-images">
+    			<div className="col-3" id="left">
+    				<img src={Yoga} id="left-image"/>
+				</div>
+    			<div className="col-6">
+    				<img src={RockCycling} />
+				</div>
+    			<div className="col-3" id="right">
+    				<img src={Climbing} id="right-image"/>
+				</div>
+			</div>
+			<h2 className="text-center">&#x25C4; <span style={{padding: '0 26px'}}>Rock Cycling</span> &#x25BA;</h2>
     	</div>
 		<div className="description container">
         	<div className="col-12 row">
@@ -25,6 +37,7 @@ const Actividades = () => {
                 </div>
 				<div className="col-12">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<br />
 					<div className="center-col-12">
 						<button id="mas-info">Mas info</button>
 					</div>

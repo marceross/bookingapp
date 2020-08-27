@@ -627,7 +627,7 @@ table th {
 
 /* JUMBOTRON */
 .jumbotron {
-  padding: 10% 1%;
+  padding: 10% 0%;
 }
 .jumbotron .col-7 {
   width: 70% !important;
@@ -638,10 +638,11 @@ table th {
 }
 .jumbotron img {
   width: 100%;
-  padding: 8px 36px;
+  padding: 0;
 }
 .jumbotron .carousel {
   border-bottom: 5px solid #f9f9f9;
+  padding: 15px 0;
 }
 .jumbotron button {
   border-radius: 5pt;
@@ -664,6 +665,36 @@ table th {
 
 .fa-star {
   color: #F0D612;
+}
+
+.sliding-images {
+  position: relative;
+  overflow-x: hidden;
+}
+.sliding-images .col-3 {
+  width: 17.5% !important;
+  padding: 0;
+}
+.sliding-images .col-6 {
+  width: 65% !important;
+  padding: 0;
+}
+
+#left {
+  position: relative;
+  left: 0;
+  width: 30vw;
+  transform: translateX(-27.6vw);
+}
+
+#left-image, #right-image {
+  width: 165px;
+}
+
+#right {
+  position: relative;
+  right: 0;
+  width: 30vw;
 }
 
 /*# sourceMappingURL=App.css.map */

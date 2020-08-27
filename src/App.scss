@@ -593,7 +593,7 @@ table th {
 
 /* JUMBOTRON */
 .jumbotron {
-	padding: 10% 1%;
+	padding: 10% 0%;
 
 	.col-7 {
     	width: 70%!important;
@@ -606,11 +606,12 @@ table th {
 
 	img {
  		width: 100%;
-    	padding: 8px 36px;
+    	padding: 0;
 	}
 
 	.carousel {
     	border-bottom: 5px solid #f9f9f9;
+    	padding: 15px 0;
 	}
 
 	button {
@@ -635,4 +636,36 @@ table th {
 
 .fa-star {
 	color: #F0D612;
+}
+
+.sliding-images {
+	position: relative;
+	overflow-x: hidden;
+
+	.col-3 {
+		width: 17.5%!important;
+    	padding: 0;
+	}
+
+	.col-6 {
+		width: 65%!important;
+    	padding: 0;
+	}
+}
+
+#left {
+    position: relative;
+    left: 0;
+    width: 30vw;
+    transform: translateX(-27.6vw);
+}
+
+#left-image, #right-image {
+	width: 165px;
+}
+
+#right {
+	position: relative;
+    right: 0;
+    width: 30vw;
 }
