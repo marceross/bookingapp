@@ -494,10 +494,13 @@ table th {
 
 /* Navbar */
 .navbar {
-  	z-index: 1;
+	background: white;
+  	z-index: 9999;
  	width: 100%;
 	box-shadow: 0 3pt 6pt #00000012;
 	padding: 0;
+	position: fixed;
+	top: 0;
 
 	.center-col-12, .col-12 {
     	padding: 0!important;
@@ -558,6 +561,12 @@ table th {
 .bottom-menu {
 	background: #F8F8F8;
 	box-shadow: -5pt -3pt 13pt #00000027;
+	border-top-right-radius: 16pt;
+	border-top-left-radius: 16pt;
+	position: sticky;
+	position: -webkit-sticky;
+	bottom: 0;
+	transform: translateY(3.5px);
 
 	p {
     	color: #E0602A;
@@ -622,4 +631,8 @@ table th {
 #reservar {
 	width: 187pt;
     height: 42pt;
+}
+
+.fa-star {
+	color: #F0D612;
 }
