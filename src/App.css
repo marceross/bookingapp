@@ -22,12 +22,13 @@ body {
 }
 
 h1, h2, .navbar, .btn {
-  line-height: 1;
+  line-height: 42px;
 }
 
 h1 {
   color: var(--yellow-color);
   font-size: 26px;
+  font-weight: 400;
 }
 
 h2 {
@@ -195,6 +196,8 @@ ul {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 /* Text Styles*/
@@ -542,7 +545,6 @@ table th {
 
 /* Navbar */
 .navbar {
-  background: white;
   z-index: 9999;
   width: 100%;
   box-shadow: 0 3pt 6pt #00000012;
@@ -582,17 +584,19 @@ table th {
   right: 30px;
   top: 24px;
 }
-.navbar a {
-  color: #fff;
-  padding: 12px;
-  margin: 0 0.25rem;
-  font-size: 24px;
-}
-.navbar a:hover {
-  color: var(--light-color);
-}
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+.transparent {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+.transparent input {
+  background: #FFFFFF;
+}
+
+.white {
+  background: #ffffff !important;
 }
 
 /* BOTTOM MENU */
@@ -644,7 +648,18 @@ table th {
   border-bottom: 5px solid #f9f9f9;
   padding: 15px 0;
 }
-.jumbotron button {
+
+#actividades-bicycle {
+  position: absolute;
+  left: 22px;
+  transform: translateY(-16px);
+  color: #38485E;
+  box-shadow: 0 3pt 6pt #00000029;
+  border-radius: 50% 50%;
+  padding: 10pt 9pt 11pt 9pt;
+}
+
+button {
   border-radius: 5pt;
   background-image: linear-gradient(90deg, #882d83, #ec7508);
   border: 0;
@@ -657,10 +672,14 @@ table th {
   width: 73pt;
   height: 25pt;
 }
+#mas-info a {
+  color: white !important;
+}
 
 #reservar {
   width: 187pt;
   height: 42pt;
+  margin-top: 12px;
 }
 
 .fa-star {
@@ -678,6 +697,9 @@ table th {
 .sliding-images .col-6 {
   width: 65% !important;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #left {
@@ -691,10 +713,149 @@ table th {
   width: 165px;
 }
 
+@media (min-width: 576px) {
+  #center-image {
+    width: 350px;
+  }
+
+  .jumbotron {
+    padding-top: 5%;
+  }
+}
 #right {
   position: relative;
   right: 0;
   width: 30vw;
+}
+
+.description .description-text {
+  font-size: 12px;
+  line-height: 19px;
+}
+.description [class*=col-] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.description-text {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* SCHEDULE */
+.schedule {
+  background: white;
+  border-top-left-radius: 26pt;
+  border-top-right-radius: 26pt;
+  position: relative;
+  bottom: 100px;
+  padding: 30pt 10%;
+  box-shadow: -5pt -10pt 5pt #00000027;
+  height: 100%;
+}
+.schedule .col-4 {
+  width: 33.33%;
+  font-weight: bold;
+}
+.schedule .col-8 {
+  width: 66.66%;
+  font-weight: bold;
+}
+.schedule .fa-clock {
+  color: #E06129;
+  font-size: 26px;
+  position: relative;
+  top: 4px;
+  padding-top: 4px;
+}
+
+.schedule-card {
+  border-radius: 11pt;
+  box-shadow: 0 3pt 6pt #00000029;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.schedule-card:hover {
+  background: linear-gradient(270deg, #F8D3AD, #E7BED6);
+}
+
+#time {
+  border-radius: 50% 50%;
+  background: #E06129;
+  padding: 4px;
+  color: white;
+}
+
+.cost {
+  border-radius: 16pt;
+  text-align: center;
+  padding: 6.5pt 13.5pt;
+  width: auto;
+  background-image: linear-gradient(90deg, #882d83, #ec7508);
+  border: 0;
+  outline: none;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  border-radius: 26pt;
+  background-color: #fefefe;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20% 20px;
+  border: 1px solid #888;
+  overflow: hidden;
+  width: 95%;
+  box-shadow: 3pt 3pt 10pt #00000027;
+}
+.modal-content h1 {
+  font-size: 30pt !important;
+  line-height: 1.15 !important;
+}
+.modal-content p {
+  font-size: 20pt !important;
+  line-height: 1.5 !important;
+}
+
+.close {
+  color: #48576B;
+  float: right;
+  font-size: 28px;
+  position: relative;
+  bottom: 64px;
+  right: 16px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ROCK CYCLING */
+.top-background {
+  background: url(./background-images/rock-cycling/rock-cycling-background.png);
+  background-size: cover;
+  background-position: 90% 10%;
+  background-repeat: no-repeat;
+  height: 350pt;
 }
 
 /*# sourceMappingURL=App.css.map */

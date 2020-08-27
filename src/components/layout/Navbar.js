@@ -1,18 +1,20 @@
 import React, {Component, Fragment} from 'react';
+import {Link} from 'react-router-dom';
 
 /* Import logo image */
 import logo from './images/logo.png';
 
 class Navbar extends Component {
     render() {
+        const {navbarClassNames} = this.props;
         return (
         	<Fragment>
-            <div className="col-12 navbar">
+            <div className={navbarClassNames}>
         		<div className="center-col-12 row">
         			<div className="col-5">
                 		<ul>
                     		<li className="navbar-logo">
-                    	    	<img src={logo} alt="The Cumpa Logo"/>
+                    	    	<Link to='/'><img src={logo} alt="The Cumpa Logo"/></Link>
                     		</li>
                 		</ul>
 					</div>
@@ -26,9 +28,6 @@ class Navbar extends Component {
 					</div>
 				</div>
             </div>
-			{/* Position: sticky couldn't work here, so I had to make the navbar class as fixed.
-  			* I inserted this div with a height of 66px here for the time being */}
-			<div style={{height: '66px'}} />
 			</Fragment>
         );
     }

@@ -1,9 +1,10 @@
 import React, { Fragment, Component } from 'react';
 
-// Layout Components
-import Actividades from '../layout/Actividades';
+/* Import components */
+import RockCyclingSchedules from '../layout/RockCyclingSchedules';
+import Modal from '../layout/Modal';
 
-class ActivitySelection extends Component {
+class RockCycling extends Component {
   	constructor(props) {
     	super(props);
     	this.setTransparency = this.setTransparency.bind(this);
@@ -17,7 +18,7 @@ class ActivitySelection extends Component {
  	}
 
   	setTransparency() {
-		let booleanValue = false;	
+		let booleanValue = true;	
     	this.setState({ transparent: booleanValue });
     	this.props.liftStateUp(booleanValue);
   	}
@@ -25,13 +26,13 @@ class ActivitySelection extends Component {
 	render() {
   		return (
     		<Fragment>
-			{/* Position: sticky couldn't work here, so I had to make the navbar class as fixed.
-  			* I inserted this div with a height of 66px here for the time being */}
-			<div style={{height: '66px'}}></div>
-        		<Actividades />
+        		<div className="top-background">
+        		</div>
+        		<RockCyclingSchedules />
+        		<Modal />
     		</Fragment>
   		);
 	}
 }
 
-export default ActivitySelection;
+export default RockCycling;
