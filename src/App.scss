@@ -890,3 +890,156 @@ button {
 	background-size: cover;
 	background-repeat: no-repeat;
 }	
+
+/* CONFIGURACION */
+.configuracion {
+	padding: 15px 10%;
+	height: 70vh;
+}
+
+.logout {
+	padding: 15px 10%;
+}
+
+.fa-sign-out-alt {
+	font-size: 22px;
+	margin-right: 24px;
+}
+
+.image-wrapper {
+	padding: 0 64px;
+}
+
+.fit-bar {
+	width: 100%;
+	border-radius: 11pt;
+	box-shadow: 0 3pt 6pt #00000029;
+
+	.switch, p {
+    	display: inline-block;
+	}
+}
+
+.switch {
+  	position: relative;
+  	display: inline-block;
+  	width: 27pt;
+  	height: 16pt;
+	margin-right: 16pt;
+	
+	input { 
+  		opacity: 0;
+  		width: 0;
+  		height: 0;
+	}
+}
+
+
+.slider {
+  	position: absolute;
+  	cursor: pointer;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #AFAFAF;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.slider:before {
+  	position: absolute;
+  	content: "";
+  	height: 16pt;
+  	width: 16pt;
+  	left: 0px;
+	bottom: 0px;
+  	background-color: #E06129;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+
+.slider.round {
+  	border-radius: 12pt;
+}
+
+.slider.round:before {
+  	border-radius: 50%;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #E06129;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* EDITAR */
+.editar-form {
+	padding: 5%;
+
+	label {
+    	font-size: 11pt;
+	}
+
+	input:not([type='file']) {
+    	border-radius: 4pt;
+    	border: 0.5pt solid #E0E0E0;
+    	margin-top: 0;
+    	font-size: 11pt;
+    	padding-top: 1.2px;
+    	padding-bottom: 1.2px;
+    	box-shadow: 0 3pt 6pt #0000000F;
+    	width: 100%;
+	}
+
+	input[type='file'] {
+		margin: 0;
+    	width: 100%;
+    	word-wrap: break-word;	
+    	width: 73pt;
+   		height: 25pt;
+    	border-radius: 5pt;
+   		background-image: linear-gradient(90deg, #882d83, #ec7508);
+   		border: 0;
+   		outline: none;
+   		color: white;    	
+		box-shadow: 0 3pt 6pt #00000029;
+	}
+
+	.col-8, .col-12 {
+    	padding: 0;
+	}
+
+	.col-8 {
+		width: 66.66%;   
+	}
+
+	.col-6 {
+    	padding: 0;
+    	width: 50%;
+	}
+
+	.col-6.photo-box {
+    	padding: 16px 16px 16px 26px;
+	}
+}
+
+.upload {
+	label, input {
+    	display: inline-block;
+	}
+}
+
+#select-file {
+	padding: 6.5pt 20pt;
+	font-size: 11pt;
+}
+
+.photo-box {
+	padding: 16px;
+}

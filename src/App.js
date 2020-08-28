@@ -10,6 +10,8 @@ import BottomMenu from './components/layout/BottomMenu';
 import ActivitySelection from './components/pages/ActivitySelection';
 import RockCycling from './components/pages/RockCycling';
 import Horarios from './components/pages/Horarios';
+import Configuracion from './components/pages/Configuracion';
+import Editar from './components/pages/Editar';
 
 class App extends Component {
   	constructor(props) {
@@ -39,6 +41,12 @@ class App extends Component {
                     </Route>        			
         			<Route path='/horarios'>
                     	<Horarios liftStateUp={this.liftStateUp} />
+                    </Route>        			
+        			<Route path='/configuracion'>
+                    	<Configuracion liftStateUp={this.liftStateUp} />
+                    </Route>
+        			<Route path='/editar'>
+                    	<Editar />
                     </Route>
         		</Switch>
         		<BottomMenu />
