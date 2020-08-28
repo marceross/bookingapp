@@ -12,7 +12,7 @@ const HorariosLists = () => {
     			<h1 className="text-center">Horarios</h1>
     		</div>
     	</div>
-    	<div className="col-12 row horarios-lists" style={{marginTop: '0'}}>
+    	<div className="col-12 row horarios-lists" style={{marginTop: '0', paddingTop: '0'}}>
     	<div className="schedule-card col-12 row" id="cycling">
     		<div className="col-8">
     			<h2>Rock Cycling</h2>
