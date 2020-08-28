@@ -78,6 +78,13 @@ button {
   color: #38485E;
 }
 
+.blue-time {
+  background: #4AADE0;
+  border-radius: 50% 50%;
+  color: white;
+  padding: 4px;
+}
+
 .orange-slider:before {
   background-color: #E06129;
 }
@@ -809,6 +816,20 @@ button {
   background: linear-gradient(270deg, #F8D3AD, #E7BED6);
 }
 
+.schedule-card-details p {
+  display: inline-block;
+  padding: 8px 26px 8px 0;
+}
+
+.top-image {
+  padding: 0;
+  background: url(background-images/horarios/rock-cycling.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 148pt;
+}
+
 #time {
   border-radius: 50% 50%;
   background: #E06129;
@@ -1048,8 +1069,11 @@ input:checked + .slider:before {
   color: white;
   box-shadow: 0 3pt 6pt #00000029;
 }
-.editar-form .col-8, .editar-form .col-12 {
+.editar-form .col-4, .editar-form .col-8, .editar-form .col-12 {
   padding: 0;
+}
+.editar-form .col-4 {
+  width: 33.33%;
 }
 .editar-form .col-8 {
   width: 66.66%;
@@ -1060,6 +1084,24 @@ input:checked + .slider:before {
 }
 .editar-form .col-6.photo-box {
   padding: 16px 16px 16px 26px;
+}
+
+.edit-schedule i {
+  display: inline-block !important;
+  font-size: 20px !important;
+  padding-right: 8px;
+}
+.edit-schedule input, .edit-schedule textarea {
+  width: inherit !important;
+  display: inline-block !important;
+}
+.edit-schedule textarea {
+  border-radius: 4pt;
+  border: 0.5pt solid #E0E0E0;
+  margin-top: 0;
+  font-size: 11pt;
+  padding: 8px;
+  box-shadow: 0 3pt 6pt #0000000F;
 }
 
 .upload label, .upload input {

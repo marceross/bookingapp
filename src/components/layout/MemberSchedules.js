@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 /* Import logo image */
 
-const HorariosLists = () => {
+const MemberSchedules = () => {
     return (
     <Fragment>
     	<div className="center-col-12">
@@ -58,4 +58,4 @@ const HorariosLists = () => {
     );
 }
 
-export default HorariosLists;
+export default MemberSchedules;

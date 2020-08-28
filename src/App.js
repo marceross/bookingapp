@@ -10,6 +10,7 @@ import BottomMenu from './components/layout/BottomMenu';
 import ActivitySelection from './components/pages/ActivitySelection';
 import RockCycling from './components/pages/RockCycling';
 import Horarios from './components/pages/Horarios';
+import Edit from './components/pages/Edit';
 import Configuracion from './components/pages/Configuracion';
 import MemberEditar from './components/pages/MemberEditar';
 
@@ -45,8 +46,12 @@ class App extends Component {
                     	<RockCycling liftStateUp={this.liftStateUp} />
                     </Route>        			
         			<Route path='/horarios'>
-                    	<Horarios liftStateUp={this.liftStateUp} />
-                    </Route>        			
+                    	<Horarios liftStateUp={this.liftStateUp} mode={this.state.mode} />
+                    </Route>     
+					{/* In the future, this Edit route will be added with the :id in the path*/}
+					<Route path='/edit'>
+                    	<Edit />
+                    </Route>
         			<Route path='/configuracion'>
                     	<Configuracion liftStateUp={this.liftStateUp} changeMode={this.changeMode} mode={this.state.mode}/>
                     </Route>
