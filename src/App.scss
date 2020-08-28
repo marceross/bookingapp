@@ -540,7 +540,7 @@ table th {
 	.fa-search {
     	position: absolute;
     	right: 30px;
-    	top: 24px;
+    	top: 27px;
 	}
 
 	.welcome span {
@@ -566,8 +566,7 @@ table th {
 	box-shadow: -5pt -3pt 13pt #00000027;
 	border-top-right-radius: 16pt;
 	border-top-left-radius: 16pt;
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	bottom: 0;
 	transform: translateY(3.5px);
 
