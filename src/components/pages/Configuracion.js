@@ -31,6 +31,8 @@ class Configuracion extends Component {
   				* I inserted this div with a height of 66px here for the time being */}
 				<div style={{height: '66px'}}></div>
 				<UserProfile changeMode={changeMode} mode={mode}/>
+				{/* Filler for the fixed-positioned bottom-menu */}
+        		<div className="col-12" style={{ height: '83.6px' }}></div>
         	</Fragment>
         );
     }

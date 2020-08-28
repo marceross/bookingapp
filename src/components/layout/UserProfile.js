@@ -48,12 +48,23 @@ class UserProfile extends Component {
 			</label>
 			{(this.props.mode === 'member-mode') ? <p>Fit</p> : <p>Gym</p>}
         </div>
-    </div>	
-	<div className="col-12 row logout">
+		{(this.props.mode === 'member-mode') ? ( 
+        		<div></div> 
+        	) : (
+        		<Fragment>
+					<div className="col-12 fit-bar">
+        				<p><i className="fa fa-line-chart"></i>Estadisticas</p>
+        			</div>
+					<div className="col-12 fit-bar">
+        				<p><i className="fas fa-search-dollar"></i>Historial</p>
+        			</div>
+        		</Fragment>
+        	)
+        }
 		<div className="col-12 fit-bar">
         	<p><i className="fas fa-sign-out-alt"></i> Cerrar sesion</p>
         </div>
-    </div>
+    </div>	
 	</Fragment>
     );
 	}

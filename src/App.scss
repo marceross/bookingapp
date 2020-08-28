@@ -904,16 +904,11 @@ button {
 /* CONFIGURACION */
 .configuracion {
 	padding: 15px 10%;
-	height: 70vh;
+	height: auto;
 }
 
 .logout {
 	padding: 15px 10%;
-}
-
-.fa-sign-out-alt {
-	font-size: 22px;
-	margin-right: 24px;
 }
 
 .image-wrapper {
@@ -924,9 +919,15 @@ button {
 	width: 100%;
 	border-radius: 11pt;
 	box-shadow: 0 3pt 6pt #00000029;
+	margin: 8px 0;
 
 	.switch, p {
     	display: inline-block;
+	}
+
+	i {
+		font-size: 22px;
+		margin-right: 24px;
 	}
 }
 
