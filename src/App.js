@@ -11,18 +11,23 @@ import ActivitySelection from './components/pages/ActivitySelection';
 import RockCycling from './components/pages/RockCycling';
 import Horarios from './components/pages/Horarios';
 import Configuracion from './components/pages/Configuracion';
-import Editar from './components/pages/Editar';
+import MemberEditar from './components/pages/MemberEditar';
 
 class App extends Component {
   	constructor(props) {
-    	super(props)
+    	super(props);
     	this.state = {
+        	mode: 'member-mode'
         }
     }
 
   	liftStateUp = data => {
     	this.setState({ transparent: data })
   	}
+    
+    changeMode = () => {
+        (this.state.mode === 'member-mode') ? this.setState({mode: 'owner-mode'}) : this.setState({mode: 'member-mode'});
+    }
     
 	render() {
     	let navbarBackgroundColor = this.state.transparent ? "transparent" : "white";
@@ -43,13 +48,13 @@ class App extends Component {
                     	<Horarios liftStateUp={this.liftStateUp} />
                     </Route>        			
         			<Route path='/configuracion'>
-                    	<Configuracion liftStateUp={this.liftStateUp} />
+                    	<Configuracion liftStateUp={this.liftStateUp} changeMode={this.changeMode} mode={this.state.mode}/>
                     </Route>
-        			<Route path='/editar'>
-                    	<Editar />
+        			<Route path='/member-editar'>
+                    	<MemberEditar />
                     </Route>
         		</Switch>
-        		<BottomMenu />
+        		<BottomMenu mode={this.state.mode}/>
     		</Fragment>
         </Router>
   		);

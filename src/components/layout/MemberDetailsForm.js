@@ -1,15 +1,12 @@
 import React, { Fragment, Component } from 'react';
 
 // Import images
-import ProfilePic from '../layout/images/profile-picture.png';
+import ProfilePic from './images/profile-picture.png';
 
-class Editar extends Component {
+class MemberDetailsForm extends Component {
 	render() {
     	return (
         <Fragment>
-        	{/* Position: sticky couldn't work here, so I had to make the navbar class as fixed.
-  			* I inserted this div with a height of 66px here for the time being */}
-			<div style={{height: '66px'}}></div>
 			<div className="container">
         	<div className="col-12 row">
         		<form className="editar-form">
@@ -62,10 +59,9 @@ class Editar extends Component {
         		</form>
         	</div>
 			</div>
-			<div className="col-12" style={{height: '83.6px'}}></div>
 		</Fragment>
         );
     }
 }
 
-export default Editar;
+export default MemberDetailsForm;

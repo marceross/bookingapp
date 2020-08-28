@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 /* Import images */
 
 class BottomMenu extends Component {
+  	constructor(props) {
+    	super(props);
+    }
+
     render() {
         return (
         <Fragment>
@@ -11,31 +15,31 @@ class BottomMenu extends Component {
         		<div className="col-3">
         			<Link to='/'>
         				<div className="center-col-12">
-        					<i className="fas fa-bicycle" />
+							{(this.props.mode === 'member-mode') ? <i className="fas fa-bicycle orange" /> : <i className="fas fa-bicycle blue" />}
         				</div>
-        				<p>Actividades</p>
+						{(this.props.mode === 'member-mode') ? <p className="orange-text">Actividades</p> : <p className="blue-text">Actividades</p> }
         			</Link>
         		</div>
         		<div className="col-3">
         			<Link to="/horarios">
         				<div className="center-col-12">
-        					<i className="fas fa-clock" />
+        					{(this.props.mode === 'member-mode') ? <i className="fas fa-clock orange" /> : <i className="fas fa-clock blue" />}
         				</div>
-        				<p>Horarios</p>
+						{(this.props.mode === 'member-mode') ? <p className="orange-text">Horarios</p> : <p className="blue-text">Horarios</p> }
         			</Link>
         		</div>
         		<div className="col-3">
         			<div className="center-col-12">
-        				<i className="fas fa-envelope" />
+        				{(this.props.mode === 'member-mode') ? <i className="fas fa-envelope orange" /> : <i className="fas fa-envelope blue" />}
         			</div>
-        			<p>Mensajes</p>
+						{(this.props.mode === 'member-mode') ? <p className="orange-text">Mesanjes</p> : <p className="blue-text">Mesanjes</p> }
         		</div>
         		<div className="col-3">
         			<Link to="/configuracion">
         				<div className="center-col-12">
-        					<i className="fa fa-gear" />
+        					{(this.props.mode === 'member-mode') ? <i className="fa fa-gear orange" /> : <i className="fa fa-gear blue" />}
         				</div>
-        				<p>Configuracion</p>
+						{(this.props.mode === 'member-mode') ? <p className="orange-text">Configuracion</p> : <p className="blue-text">Configuracion</p> }
         			</Link>
         		</div>
             </div>
