@@ -26,11 +26,11 @@ class UserProfile extends Component {
 			<div className="center-col-12">
 				{(this.props.mode === 'member-mode') ? (
                 		<button id="mas-info">
-                			<Link to='/member-editar'>Editar</Link>
+                			<Link to='/editar'>Editar</Link>
                 		</button>
                 	) : (
                 		<button className="blue" id="mas-info">
-                			<Link to='/member-editar'>Editar</Link>
+                			<Link to='/editar'>Editar</Link>
                 		</button>
                 	)
 				}
