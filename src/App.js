@@ -16,12 +16,21 @@ import Editar from './components/pages/Editar';
 
 class App extends Component {
    	state = {
-        mode: 'member-mode'
+        mode: 'member-mode',
+    	transparent: false
     }
 
-  	liftStateUp = data => {
-    	this.setState({ transparent: data });
-  	}
+	// Set navbar background color to white
+	setTransparentToFalse = () => {
+    	this.setState({transparent: false});
+    	console.log(this.state.transparent);
+    }
+    
+    // Set navbar background color to transparent
+    setTransparentToTrue = () => {
+    	this.setState({transparent: true});
+    	console.log(this.state.transparent);
+    }
     
     changeMode = () => {
         (this.state.mode === 'member-mode') ? ( 
@@ -36,36 +45,40 @@ class App extends Component {
     	let navbarClassNames = "col-12 navbar " + navbarBackgroundColor;
     
     	/* Defining Props */
-    	const liftStateUp = this.liftStateUp;
+    	const setTransparentToFalse = this.setTransparentToFalse;
+    	const setTransparentToTrue = this.setTransparentToTrue;
     	const changeMode = this.changeMode;
     	const mode = this.state.mode;
     
   		return (
         <Router>
     		<Fragment>
-        		<Navbar navbarClassNames={navbarClassNames}/>
+        		<Navbar 
+        			navbarClassNames={navbarClassNames} 
+					setTransparentToFalse={setTransparentToFalse}
+				/>
         		<Switch>
         			<Route exact path='/'>
-                    	<ActivitySelection liftStateUp={liftStateUp} />
+                    	<ActivitySelection setTransparentToTrue={setTransparentToTrue} />
                     </Route>        			
         			<Route path='/rock-cycling'>
-                    	<RockCycling liftStateUp={liftStateUp} />
+                    	<RockCycling />
                     </Route>        			
         			<Route path='/horarios'>
-                    	<Horarios liftStateUp={liftStateUp} mode={mode} />
+                    	<Horarios mode={mode} />
                     </Route>     
 					{/* In the future, this Edit route will be added with the :id in the path*/}
 					<Route path='/edit'>
                     	<Edit />
                     </Route>
         			<Route path='/configuracion'>
-                    	<Configuracion liftStateUp={liftStateUp} changeMode={changeMode} mode={mode}/>
+                    	<Configuracion changeMode={changeMode} mode={mode}/>
                     </Route>
         			<Route path='/editar'>
                     	<Editar mode={mode}/>
                     </Route>
         		</Switch>
-        		<BottomMenu mode={mode}/>
+        		<BottomMenu setTransparentToFalse={setTransparentToFalse} mode={mode}/>
     		</Fragment>
         </Router>
   		);
