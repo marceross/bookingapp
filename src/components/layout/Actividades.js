@@ -6,7 +6,7 @@ import RockCycling from './images/rock-cycling.png';
 import Climbing from './images/climbing.png';
 import Yoga from './images/yoga.png';
 
-const Actividades = ({ setTransparentToTrue }) => {
+const Actividades = () => {
     return (
 	<div className="jumbotron col-12 row">
     	<div className="carousel col-12">
@@ -41,7 +41,7 @@ const Actividades = ({ setTransparentToTrue }) => {
 					<p className="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<br />
 					<div className="center-col-12">
-						<button id="mas-info"><Link to="/rock-cycling" onClick={setTransparentToTrue}>Mas Info</Link></button>
+						<button id="mas-info"><Link to="/rock-cycling">Mas Info</Link></button>
 					</div>
 					<div className="center-col-12">
 						<button id="reservar">Reservar</button>

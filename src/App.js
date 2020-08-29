@@ -23,13 +23,11 @@ class App extends Component {
 	// Set navbar background color to white
 	setTransparentToFalse = () => {
     	this.setState({transparent: false});
-    	console.log(this.state.transparent);
     }
     
     // Set navbar background color to transparent
     setTransparentToTrue = () => {
     	this.setState({transparent: true});
-    	console.log(this.state.transparent);
     }
     
     changeMode = () => {
@@ -53,26 +51,27 @@ class App extends Component {
   		return (
         <Router>
     		<Fragment>
-        		<Navbar 
-        			navbarClassNames={navbarClassNames} 
-					setTransparentToFalse={setTransparentToFalse}
-				/>
+        		<Navbar navbarClassNames={navbarClassNames} />
         		<Switch>
         			<Route exact path='/'>
-                    	<ActivitySelection setTransparentToTrue={setTransparentToTrue} />
+                    	<ActivitySelection setTransparentToFalse={setTransparentToFalse} />
                     </Route>        			
         			<Route path='/rock-cycling'>
-                    	<RockCycling />
+                    	<RockCycling setTransparentToTrue={setTransparentToTrue} />
                     </Route>        			
         			<Route path='/horarios'>
-                    	<Horarios mode={mode} />
+                    	<Horarios mode={mode} setTransparentToFalse={setTransparentToFalse}/>
                     </Route>     
 					{/* In the future, this Edit route will be added with the :id in the path*/}
 					<Route path='/edit'>
                     	<Edit />
                     </Route>
         			<Route path='/configuracion'>
-                    	<Configuracion changeMode={changeMode} mode={mode}/>
+                    	<Configuracion 
+							setTransparentToFalse={setTransparentToFalse} 
+							changeMode={changeMode} 
+							mode={mode}
+						/>
                     </Route>
         			<Route path='/editar'>
                     	<Editar mode={mode}/>

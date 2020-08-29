@@ -5,6 +5,11 @@ import RockCyclingSchedules from '../layout/RockCyclingSchedules';
 import Modal from '../layout/Modal';
 
 class RockCycling extends Component {
+	componentDidMount() {
+    	const setTransparentToTrue = this.props.setTransparentToTrue;
+    	setTransparentToTrue();
+    }
+
 	render() {
   		return (
     		<Fragment>

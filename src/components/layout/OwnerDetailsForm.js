@@ -53,6 +53,15 @@ class OwnerDetailsForm extends Component {
                             </div>
 						</div>
 					</div>
+            		<div className="center-col-12">
+            			<div className="col-8" style={{paddingRight: '16px'}}>
+        					<label>Mi gym</label>
+                        	<input type="text" />
+						</div>
+						<div className="col-4">
+							<button className="blue" id="select-file">Editar</button>
+                        </div>
+					</div>
 					<div className="center-col-12">
 						<button type="submit" className="blue" id="reservar">Actualizar</button>
 					</div>

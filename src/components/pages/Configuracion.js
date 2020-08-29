@@ -5,6 +5,11 @@ import {Route} from 'react-router-dom';
 import UserProfile from '../layout/UserProfile';
 
 class Configuracion extends Component {
+	componentDidMount() {
+    	const setTransparentToFalse = this.props.setTransparentToFalse;
+    	setTransparentToFalse();
+    }
+
 	render() {
     	const {changeMode, mode} = this.props;
   		return (

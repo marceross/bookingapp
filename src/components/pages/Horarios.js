@@ -5,6 +5,11 @@ import MemberSchedules from '../layout/MemberSchedules';
 import OwnerSchedules from '../layout/OwnerSchedules';
 
 class Horarios extends Component {
+	componentDidMount() {
+    	const setTransparentToFalse = this.props.setTransparentToFalse;
+    	setTransparentToFalse();
+    }
+
 	render() {
   		return (
 			<Fragment>

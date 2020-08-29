@@ -1069,7 +1069,7 @@ input:checked + .slider:before {
   color: white;
   box-shadow: 0 3pt 6pt #00000029;
 }
-.editar-form .col-4, .editar-form .col-8, .editar-form .col-12 {
+.editar-form .col-4, .editar-form .col-8, .editar-form .col-12, .editar-form .center-col-12 {
   padding: 0;
 }
 .editar-form .col-4 {

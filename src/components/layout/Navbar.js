@@ -6,7 +6,7 @@ import logo from './images/logo.png';
 
 class Navbar extends Component {
     render() {
-        const {navbarClassNames, setTransparentToFalse} = this.props;
+        const navbarClassNames = this.props.navbarClassNames;
         return (
         	<Fragment>
             <div className={navbarClassNames}>
@@ -14,7 +14,7 @@ class Navbar extends Component {
         			<div className="col-5">
                 		<ul>
                     		<li className="navbar-logo">
-                    	    	<Link to='/' onClick={setTransparentToFalse}>
+                    	    	<Link to='/'>
                                 	<img src={logo} alt="The Cumpa Logo"/>
                                 </Link>
                     		</li>
