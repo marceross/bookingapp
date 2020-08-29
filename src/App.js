@@ -13,6 +13,7 @@ import Horarios from './components/pages/Horarios';
 import Edit from './components/pages/Edit';
 import Configuracion from './components/pages/Configuracion';
 import Editar from './components/pages/Editar';
+import GymEditar from './components/pages/GymEditar';
 
 class App extends Component {
    	state = {
@@ -75,6 +76,9 @@ class App extends Component {
                     </Route>
         			<Route path='/editar'>
                     	<Editar mode={mode}/>
+                    </Route>
+        			<Route path='/gym-editar'>
+                    	<GymEditar />
                     </Route>
         		</Switch>
         		<BottomMenu setTransparentToFalse={setTransparentToFalse} mode={mode}/>

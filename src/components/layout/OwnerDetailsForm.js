@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // Import images
 import ProfilePic from './images/profile-picture.png';
@@ -59,7 +60,7 @@ class OwnerDetailsForm extends Component {
                         	<input type="text" />
 						</div>
 						<div className="col-4">
-							<button className="blue" id="select-file">Editar</button>
+							<button className="blue" id="select-file"><Link to='/gym-editar'>Editar</Link></button>
                         </div>
 					</div>
 					<div className="center-col-12">

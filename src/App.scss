@@ -40,7 +40,7 @@ p {
 }
 
 a {
-  color: var(--primary-color);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -762,6 +762,74 @@ button {
 	}
 }
 
+.gym-editar {
+    box-shadow: 3pt 3pt 10pt #00000040!important;
+
+	h1 {
+    	margin-top: 16px;
+	}
+
+	.col-2, .col-4, .col-8 {
+    	padding: 0;
+    	word-wrap: break-word;
+	}
+
+	.col-2 {
+    	width: 16.66%;
+	}
+
+	img {
+    	width: 100%;
+	}
+
+	.fa-edit {
+		color: white;
+    	background: #4AADE0;
+    	font-size: 16px;
+    	padding: 8px;
+    	border-radius: 50% 50%;    
+	}
+
+	.fa-phone-alt, 
+	.fa-envelope, 
+	.fa-dumbbell,
+	.fa-map-marker {
+		background: #FBFBFC;
+    	box-shadow: 0 3pt 6pt #00000029;
+    	border-radius: 50% 50%;
+    	padding: 8px;
+	}
+
+	p {
+    	font-weight: 400;
+    	padding-top: 4px;
+	}
+}
+
+.gym-icon {
+	padding: 0;
+
+	.fa-dumbbell {
+    	font-size: 36pt;
+    	padding: 16pt;
+    	position: absolute;
+    	transform: translateY(-42px);
+	}
+}
+
+.fa-map-marker {
+   	font-size: 36pt;
+   	padding: 16pt;
+   	position: absolute;    
+	transform: translateY(-42px);
+}
+
+.description-edit {
+    position: absolute;
+    right: 0;
+    transform: translate(-12px, -58px);
+}
+
 .schedule-card {
 	border-radius: 11pt;
 	box-shadow: 0 3pt 6pt #00000029;
@@ -865,6 +933,11 @@ button {
 	background-position: 90% 10%;
 	background-repeat: no-repeat;
 	height: 350pt;
+}
+
+.top-background-grey {
+	background: #FCFCFC;
+	height: 175pt;
 }
 
 /* HORARIOS */
