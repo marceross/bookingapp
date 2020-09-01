@@ -1,3 +1,6 @@
+Please make an explanation of which file is for which purpose
+And can you please get in touch with Ztoa https://join.skype.com/invite/XJechijSirkX
+
 ## Booking App: Documentation
 
 Firstly, clone this repository and run:
