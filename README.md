@@ -4,31 +4,22 @@ go to to react frontend and open terminal and type the following cmds,
 
 
 
-1)
-### > npm run eject 
+#### # npm run eject 
 
-2)
-##### In config/path.js edit appBuild in module.exports as   
-### > appBuild: resolveApp('../flask_backend/app_src/static/react'),
+In config/path.js edit appBuild in module.exports as   
+#### # appBuild: resolveApp('../flask_backend/app_src/static/react'),
 
+After that go to webpackconfig.js  
+#### # Find all "static/" and replace all it as ""
 
-3)
-##### After that go to webpackconfig.js  
-### > Find all "static/" and replace all it as ""
+and then, in same file search for HtmlWebpackPlugin and add a line 
+#### # filename: '../../templates/index.html'
 
+and then go to packages.json and add line
+#### # "homepage": "/static/react",
 
-4)
-##### and then, in same file search for HtmlWebpackPlugin and add a line 
-### > filename: '../../templates/index.html'
-
-5)
-##### and then go to packages.json and add line
-### > "homepage": "/static/react",
-
-
-6)
-##### Finally type the cmd
-### > npm run build 
+Finally type the cmd
+#### # npm run build 
 
 
 
@@ -38,27 +29,23 @@ go to to react frontend and open terminal and type the following cmds,
 
 Explaination :
 
-1)
+1) This is to change the config of paths of build file to backend location
 ### > npm run eject 
-##### This is to change the config of paths of build file to backend location
 Result of above cmd give config folder and scripts folder inside react front end
 
 
 
-2)
-##### In config/path.js edit appBuild in module.exports as   
+2) In config/path.js edit appBuild in module.exports as   
 ### > appBuild: resolveApp('../flask_backend/app_src/static/react'),
 
 
 
-3)
-##### After that go to webpackconfig.js  
+3) After that go to webpackconfig.js  
 ### > Find all "static/" and replace all it as ""
 
 
 
-4)
-##### and then, in same file search for HtmlWebpackPlugin and add a line 
+4) and then, in same file search for HtmlWebpackPlugin and add a line 
 ### > filename: '../../templates/index.html'
 
 plugins: [
@@ -85,8 +72,7 @@ plugins: [
 
 
 
-5)
-##### and then go to packages.json and add line
+5) and then go to packages.json and add line
 ### > "homepage": "/static/react",
 {
   "name": "bookingapp",
@@ -102,8 +88,7 @@ plugins: [
 
 
 
-6)
-##### Finally type the cmd
+6) Finally type the cmd
 ### > npm run build 
 it will build the frontend inside flaskbackend/appsrc/ in static and templates
 
