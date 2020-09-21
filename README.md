@@ -1,12 +1,13 @@
 Connecting with front-end with backend by,<br>
 go to to react frontend and open terminal and type the following cmds,
-<br><br><br><br>
+<br><br><br>
 
 
 
 #### # npm run eject 
+<br>
 
-In config/path.js edit appBuild in module.exports as   
+And then In config/path.js edit appBuild in module.exports as   
 #### # appBuild: resolveApp('../flask_backend/app_src/static/react'),
 
 After that go to webpackconfig.js  
