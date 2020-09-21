@@ -5,23 +5,18 @@ go to to react frontend and open terminal and type the following cmds,
 
 
 #### # npm run eject 
-<br>
 
 In config/path.js edit appBuild in module.exports as   
 #### # appBuild: resolveApp('../flask_backend/app_src/static/react'),
-<br>
 
 After that go to webpackconfig.js  
 #### # Find all "static/" and replace all it as ""
-<br>
 
 and then, in same file search for HtmlWebpackPlugin and add a line 
 #### # filename: '../../templates/index.html'
-<br>
 
 and then go to packages.json and add line
 #### # "homepage": "/static/react",
-<br>
 
 Finally type the cmd
 #### # npm run build 
