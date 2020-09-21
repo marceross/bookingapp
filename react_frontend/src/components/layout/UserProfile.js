@@ -5,6 +5,17 @@ import {Link} from 'react-router-dom';
 import ProfilePicture from './images/profile-picture.png';
 
 class UserProfile extends Component {
+	
+	state = {
+        current_user: {}
+    }
+
+	componentDidMount() {
+		fetch('http://127.0.0.1:5000/api/get_current_user')
+		.then(res => res.json())
+		.then(res => {this.setState({ current_user: res })})
+	}
+
     render() {
 	return (
     <Fragment>
@@ -21,8 +32,8 @@ class UserProfile extends Component {
     				<img src={ProfilePicture} alt="Your profile picture" style={{ width: '100%' }}/>
 				</div>
 			</div>
-			<h1 className="text-center">Tutku Unlu</h1>
-			<p className="text-center">tutkumtepe@gmail.com</p>
+			<h1 className="text-center">{this.state.current_user.first_name}</h1>
+			<p className="text-center">{this.state.current_user.email}</p>
 			<div className="center-col-12">
 				{(this.props.mode === 'member-mode') ? (
                 		<button id="mas-info">

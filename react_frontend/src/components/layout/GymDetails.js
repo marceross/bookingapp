@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 /* Import images */
@@ -8,6 +8,41 @@ import Photo3 from './images/photo3.png';
 import Map from './images/map.png';
 
 const GymDetails = () => {
+
+	{/*
+	
+	we need to do the same in functional component
+	state = {
+        gym: {}
+    }
+
+	componentDidMount() {
+		fetch('http://127.0.0.1:5000/api/get_gym_details')
+		.then(res => res.json())
+		.then(res => {this.setState({ gym: res })})
+	}
+
+	*/}
+
+	{/*
+		and we need to check if gym/response is empty or not 
+		if empty we need to give add gym form with all empty input fields
+		else we need to give update gym form with old gym details in input field to update
+		
+		In gym, we have
+		gym.id  {we need to send this id inside form as hidden input to api while updating}
+		gym.owner_id
+		gym.name
+		gym.description
+		gym.picture_1_file_path 
+		gym.picture_2_file_path
+		gym.picture_3_file_path
+		gym.location
+		gym.email
+		gym.phone_number
+
+	*/}
+
     return (
     	<div className="container">
     		<div className="col-12 schedule gym-editar">

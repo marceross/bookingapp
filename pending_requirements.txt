@@ -1,0 +1,110 @@
+If you dont get what im saying in this file mean contact me or else make a skype call to share my screen to pointing the problems, 
+that may be more clear understanding
+
+
+
+
+Pending Works :
+
+
+1) 
+In all page we need add a flash message section
+
+2)
+Input Form fields
+
+make input field with differnt color or give clarifcation of effect where the field is exist 
+Input field is not visible on all pages clearly 
+this is not user friendly
+
+3)
+User Details page
+
+In MemberDetailsForm.js in component/layout and
+In OwnerDetailsForm.js in component/layout
+
+3.a)
+In user details edit page, you need to convert certificate button to input type bcz once we click that button 
+it need to popup for file selection but it send data to action this is wrong
+so i removed this button and we have input field for that but its not visble why? 
+any how, we need to change that as input button for selectiong file only not to send request of submiting form
+
+3.b)
+In user details edit page add update the enter details while enter user details 
+
+3.c)
+In user details edit page user profile is need to send with input to form like
+{/* input type=file name="profile_pic"  */}
+
+
+4)
+Gym page
+
+4.a)
+You only created the display og gym details update button is not working on that
+we have to create gym details edit page same as GymDetails.js but we need to add input field with form and input fields already filled 
+If user already created gym or else 
+
+4.b)
+it empty input fields for add gym
+{/* 
+		In gym db and api structure, we have
+		gym.id  {we need to send this id inside form as hidden input to api while updating}
+		gym.owner_id
+		gym.name
+		gym.description
+		gym.picture_1_file_path
+		gym.picture_2_file_path
+		gym.picture_3_file_path
+		gym.location
+		gym.email
+		gym.phone_number
+*/}
+
+
+
+5)
+issue
+whenever im in gym owner mode after any progress it take me to normal user mode why is this happening?
+
+
+
+6)
+Activity page
+
+6.a)
+actvity swipe not working on desktop
+
+6.b)
+reserve button also not working on activty page
+
+6.c)
+once i click more info it take to reservation page with timeslots of activiy , there not able to click the timeslot for reservation
+
+
+
+7)
+History page
+
+7.a)
+my reserved activiy deletion button is not working
+
+7.b)
+in owner mode create activiy button is not working 
+
+7.c)
+create activiy page is not yet build create activiy or update activity page.
+we only have update activiy time slot page
+
+
+8)
+why you kept all form as empty? and why also you never code for call the apis ?
+
+what the use of packages.jsonlock file?
+
+
+9)
+refesh takes to homepage all time i think its due to we are serving index page only via backend may be thats the reason, 
+we need to fix this too.
+
+
