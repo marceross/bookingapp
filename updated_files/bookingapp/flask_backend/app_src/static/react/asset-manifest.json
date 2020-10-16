@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.f6e7e296.chunk.css",
+    "main.js": "/static/react/js/main.32f9d95b.chunk.js",
+    "main.js.map": "/static/react/js/main.32f9d95b.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.5e70496d.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.5e70496d.js.map",
+    "js/2.9467448c.chunk.js": "/static/react/js/2.9467448c.chunk.js",
+    "js/2.9467448c.chunk.js.map": "/static/react/js/2.9467448c.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/main.f6e7e296.chunk.css.map": "/static/react/css/main.f6e7e296.chunk.css.map",
+    "js/2.9467448c.chunk.js.LICENSE.txt": "/static/react/js/2.9467448c.chunk.js.LICENSE.txt",
+    "media/App.css": "/static/react/media/running.31a50ce5.png",
+    "media/climbing.png": "/static/react/media/climbing.20bc18c1.png",
+    "media/map.png": "/static/react/media/map.d8f9e0a3.png",
+    "media/photo1.png": "/static/react/media/photo1.be392cea.png",
+    "media/photo2.png": "/static/react/media/photo2.70262f4f.png",
+    "media/photo3.png": "/static/react/media/photo3.bbbc66d9.png",
+    "media/profile-picture.png": "/static/react/media/profile-picture.e7d2474c.png",
+    "media/rock-cycling.png": "/static/react/media/rock-cycling.ff251d51.png",
+    "media/yoga.png": "/static/react/media/yoga.a424d6d8.png",
+    "precache-manifest.e07d8858f5e23b7e0994556f473075f9.js": "/static/react/precache-manifest.e07d8858f5e23b7e0994556f473075f9.js",
+    "service-worker.js": "/static/react/service-worker.js"
+  },
+  "entrypoints": [
+    "js/runtime-main.5e70496d.js",
+    "js/2.9467448c.chunk.js",
+    "css/main.f6e7e296.chunk.css",
+    "js/main.32f9d95b.chunk.js"
+  ]
+}

@@ -1,0 +1,25 @@
+location on gym page
+profile pic path from backend 
+
+
+
+db: 
+
+activity picture is now 2 we need to change to 1 bcz front end is desiged in that manner
+rating field to be add in activity table
+
+add room avail field and room count both in activity timeslot table
+discount field in activity_timeslot table
+
+activty table la rating field default 5 to all 
+
+
+
+activity_schedule la display agura image kuriya code enga iruku 
+bcz activity_schedule page la tha api la iruthu antha acvity details get panrom apo tha 
+antha pic location db la iruthu varum atha anupunu athan
+
+
+
+
+rating is not in current version so all have 5 rating default
